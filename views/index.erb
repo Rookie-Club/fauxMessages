@@ -2,23 +2,29 @@
 <meta charset="utf-8">
 <title> La petite application de Souley </title>
 
-<form>
+<p>Pour Alexandre - <%= "Coucou " * 4 %></p>
+
+
+<p>Debug
+<%= @data.inspect %>
+</p>
+
+<form action="/" method="post">
   <label>
     id
-    <input>
+    <input name="id">
   </label>
   <label>
     nom
-    <input>
+    <input name="name">
   </label>
   <label>
     email
-    <input>
+    <input name="email">
   </label>
   <label>
     message
-    <textarea>
-    </textarea>
+    <textarea name="message"></textarea>
   </label>
   <button type="submit">Envoyer</button>
 </form>
