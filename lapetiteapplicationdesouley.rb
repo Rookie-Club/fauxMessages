@@ -14,7 +14,7 @@ post '/' do
 end
 
 
-def write_data(data)
+def write_data!(data)
   une_chaine_de_charactere = data.to_json
 
   File.open("messages.json","w") do |f|
